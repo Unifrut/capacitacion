@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="libro_view_form">
+            <field name="name">biblioteca.libro.form</field>
+            <field name="model">biblioteca.libro</field>
+            <field name="arch" type="xml">
+                <form string="Libro Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="genero"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>        
+        </record>
+        
+        <record model="ir.ui.view" id="libro_view_list">
+            <field name="name">biblioteca.libro.list</field>
+            <field name="model">biblioteca.libro</field>
+            <field name="arch" type="xml">
+                <tree string="Libro List">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="autor"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="libro_view_search">
+            <field name="name">biblioteca.libro.search</field>
+            <field name="model">biblioteca.libro</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="autor"/>
+                    <field name="isbn"/>
+                </search>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
