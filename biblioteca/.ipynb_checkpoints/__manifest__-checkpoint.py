@@ -12,11 +12,11 @@
     'version':'0.1',
     'depends':['base'],
     'data':[
-       # 'security/biblioteca_security.xml',
-       # 'security/ir.model.access.csv',
+        'security/biblioteca_security.xml',
+        'security/ir.model.access.csv',
     ],
     'demo':[
-      #  'demo/biblioteca_demo.xml',
+        'demo/biblioteca_demo.xml',
     ],
     'license':'OPL-1'
 }

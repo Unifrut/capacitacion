@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="biblioteca.libro" id="Libro_001">
+            <field name="name">La Isla del Tesoro</field>
+            <field name="description">Relata las increibles aventuras de Jim Hawkins en busca del increible tesoro</field>
+            <field name="autor">Robert Louis Stevenson</field>
+            <field name="genero">Aventuras</field>
+            <field name="editor">Young Folks</field>
+            <field name="editorial">Fontana</field>
+            <field name="año">1883</field>
+            <field name="isbn">052415155</field>
+        </record>
+        
+        <record model="biblioteca.libro" id="Libro_002">
+            <field name="name">Viaje al centro de la tierra</field>
+            <field name="description">Trata de la expedición de un profesor de mineralogía, Otto Lidenbrock, su sobrino Axel y un guía llamado Hans al interior de la Tierra</field>
+            <field name="autor">Julio Verne</field>
+            <field name="genero">Novela</field>
+            <field name="editor">Édouard Riou</field>
+            <field name="editorial">Hetzel</field>
+            <field name="año">1864</field>
+            <field name="isbn">05256654</field>
+        </record>
+        
+        <record model="biblioteca.libro" id="Libro_003">
+            <field name="name">Harry Potter y la piedra filosofal</field>
+            <field name="description">Harry Potter crece en la casa de sus tíos y ha sido admitido en el Colegio Hogwarts de Magia y Hechicería, ya que, al igual que sus padres, es mago.</field>
+            <field name="autor">J.K. Rowling</field>
+            <field name="genero">Fantasía</field>
+            <field name="editor">Salamandra</field>
+            <field name="editorial">Bloomsbury Publishing</field>
+            <field name="año">1997</field>
+            <field name="isbn">65132051</field>
+        </record>
+        
+        <record model="biblioteca.libro" id="Libro_004">
+            <field name="name">Veinte mil leguas de viaje submarino</field>
+            <field name="description">Es una obra narrada en primera persona por el profesor francés Pierre Aronnax, notable biólogo que es hecho prisionero por el Capitán Nemo</field>
+            <field name="autor">Julio Verne</field>
+            <field name="genero">Ciencia ficción</field>
+            <field name="editor">Vicente Guimerá</field>
+            <field name="editorial">Hetzel</field>
+            <field name="año">1870</field>
+            <field name="isbn">056151251</field>
+        </record>
+        
+        <record model="biblioteca.libro" id="Libro_005">
+            <field name="name">Eragon</field>
+            <field name="description">La historia transcurre en el ficticio territorio de Alagaesia. El protagonista, Eragon, encuentra una especie de piedra preciosa de gran tamaño y color azul mientras está cazando en el bosque</field>
+            <field name="autor">Christopher Paolini</field>
+            <field name="genero">Fantasía</field>
+            <field name="editor">John Jude Palencar</field>
+            <field name="editorial">Alfred A. Knopf</field>
+            <field name="año">2002</field>
+            <field name="isbn">658105615</field>
+        </record>
+    </data>
+</odoo>
