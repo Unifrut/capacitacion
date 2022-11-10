@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="space.course" id="nave_1">
+            <field name="name">La Niña</field> 
+            <field name="nave_dimension">10m</field> 
+            <field name="nave_combustible">Magnum</field>
+            <field name="nave_tipo">Sobrevuelo</field> 
+            <field name="nave_pasajeros">2</field>  
+        </record>
+        
+        <record model="space.course" id="nave_2">
+            <field name="name">La Pinta</field> 
+            <field name="nave_dimension">30m</field> 
+            <field name="nave_combustible">Disel</field>
+            <field name="nave_tipo">Penetradora</field> 
+            <field name="nave_pasajeros">10</field> 
+        </record>
+        
+        <record model="space.course" id="nave_3">
+            <field name="name">La Santa Maria</field> 
+            <field name="nave_dimension">30m</field> 
+            <field name="nave_combustible">Disel</field>
+            <field name="nave_tipo">Penetradora</field> 
+            <field name="nave_pasajeros">10</field> 
+        </record>
+    </data>
+</odoo> 

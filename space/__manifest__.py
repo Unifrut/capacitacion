@@ -15,7 +15,7 @@
         
     ],
     'demo': [
-        #'demo/cohete.xml',
+        'demo/cohete.xml',
     ],
     'license':'OPL-1'
 }
