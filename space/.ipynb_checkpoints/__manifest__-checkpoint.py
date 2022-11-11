@@ -12,6 +12,8 @@
     'version':'0.1',
     'depends':['base'],
     'data':[
+        'security/space_Security.xml',
+        'security/ir.model.access.csv',
         
     ],
     'demo': [

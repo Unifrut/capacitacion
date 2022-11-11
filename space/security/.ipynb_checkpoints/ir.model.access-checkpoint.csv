@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+space_admin,Administrador,model_space_course,group_space_admin,1,1,1,1
+space_tripulante,Tripulante,model_space_course,,0,0,0,1
+space_usuario,Usuario,model_space_course,,1,0,0,0
