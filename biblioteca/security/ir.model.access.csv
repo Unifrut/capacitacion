@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 biblio_admin,Bibliotecario,model_biblioteca_libro,group_biblioteca_admin,1,1,1,1
 biblio_cliente,Cliente,model_biblioteca_libro,,1,0,0,0
+alquiler_admin,Alquiler Admin,model_biblioteca_alquiler,group_biblioteca_admin,1,1,1,1
+alquiler_read_all,Alquiler Read All,model_biblioteca_alquiler,,1,0,0,0

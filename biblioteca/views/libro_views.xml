@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <data>
-        
+    <data>        
         <record model="ir.ui.view" id="libro_view_form">
             <field name="name">biblioteca.libro.form</field>
             <field name="model">biblioteca.libro</field>
@@ -25,6 +24,9 @@
                         <notebook>
                             <page string="Description">
                                 <field name="description"/>
+                            </page>
+                            <page string="Alquiler">
+                                <field name="alquiler_ids"/>
                             </page>
                         </notebook>
                     </sheet>

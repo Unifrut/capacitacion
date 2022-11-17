@@ -14,13 +14,26 @@
             </field>       
         </record>
         
+        <record model="ir.actions.act_window" id="alquiler_list_action">
+            <field name="name">Alquiler</field>
+            <field name="res_model">biblioteca.alquiler</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Creando Alquileres
+                </p>
+            </field>            
+        </record>
+        
         <menuitem name="Odoo Biblioteca" 
                   id="menu_biblioteca" 
                   sequence="1"/>
         
-        <menuitem id="menu_biblioteca_sub" name="Odoo Biblioteca" parent="menu_biblioteca" sequence="2"/>
+        <menuitem id="menu_biblioteca_sub" name="Biblioteca" parent="menu_biblioteca" sequence="2"/>
         
         <menuitem id="menu_biblioteca_libros" name="Libros" parent="menu_biblioteca_sub" sequence="3" action="biblioteca_list_action"/>
+        
+        <menuitem id="menu_biblioteca_alquiler" name="Alquiler" parent="menu_biblioteca_sub" sequence="4" action="alquiler_list_action"/>
         
     </data>
 </odoo>

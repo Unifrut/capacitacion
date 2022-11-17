@@ -7,7 +7,7 @@ class Libro(models.Model):
     _name = 'biblioteca.libro'
     _description = 'Informacion de Libro'
     
-    name = fields.Text(string='Title', required=True)
+    name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
     autor = fields.Text(string='Author')
     genero = fields.Text(string='Genere')
@@ -27,12 +27,16 @@ class Libro(models.Model):
     precio = fields.Float(string='Precio', default=0.00)
     paginas = fields.Integer(string='No Paginas', default=0)
     
+    alquiler_ids = fields.One2many(comodel_name='biblioteca.alquiler',
+                                  inverse_name='libro_id', 
+                                  string='Alquiler')
+    
     """
     @api.onchange('precio')
     def _onchange_precio(self):
         if self < 0.00:
             raise UserError(_('El precio no puede ser negativo.'))
-       """     
+      """      
     @api.onchange('isbn')
     def _onchange_isbn(self): 
          if (len(self) >10):
