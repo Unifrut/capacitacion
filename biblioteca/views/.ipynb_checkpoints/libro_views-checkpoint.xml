@@ -27,6 +27,7 @@
                             </page>
                             <page string="Alquiler">
                                 <field name="alquiler_ids"/>
+                                <!--<field name="libros_ids"/>-->
                             </page>
                         </notebook>
                     </sheet>

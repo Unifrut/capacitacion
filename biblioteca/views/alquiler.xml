@@ -11,14 +11,18 @@
                         <h1><field name="name"/></h1>
                         <group>
                             <group>
-                                <field name="libro_id"/>
+                                <field name="name"/>
+                                <field name="cliente"/>
                             </group>
                             <group>
-                                <!--Aqio colocar la fecha -->
+                                <field name="fechaI"/>
+                                <field name="fechaF"/>
+                                <field name="duracion"/>
                             </group>
                             <notebook>
                                 <page string="Prestamos">
                                     <field name="clientes_ids"/>
+                                    <!--<field name="libros_ids"/>-->
                                 </page>
                             </notebook>
                         </group>
@@ -34,6 +38,21 @@
                 <tree string="Alquiler List">
                     <field name="name"/>
                 </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="alquiler_view_calendar">
+            <field name="name">biblioteca.alquiler.calendar</field>
+            <field name="model">biblioteca.alquiler</field>
+            <field name="arch" type="xml">
+                <calendar string="Calendario de Alquiler"
+                          date_start="fechaI"
+                          date_stop="fechaF"
+                          color="cliente"
+                          mode="month">
+                    <field name="name"/>
+                    <field name="cliente" filters='1' avatar_field='avatar_128'/>
+                </calendar>
             </field>
         </record>
     </data>

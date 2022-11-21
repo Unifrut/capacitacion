@@ -17,7 +17,7 @@
         <record model="ir.actions.act_window" id="alquiler_list_action">
             <field name="name">Alquiler</field>
             <field name="res_model">biblioteca.alquiler</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Creando Alquileres

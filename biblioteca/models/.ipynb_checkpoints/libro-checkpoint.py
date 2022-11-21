@@ -27,11 +27,10 @@ class Libro(models.Model):
     precio = fields.Float(string='Precio', default=0.00)
     paginas = fields.Integer(string='No Paginas', default=0)
     
-    alquiler_ids = fields.One2many(comodel_name='biblioteca.alquiler',
+    """alquiler_ids = fields.One2many(comodel_name='biblioteca.alquiler',
                                   inverse_name='libro_id', 
                                   string='Alquiler')
-    
-    """
+  
     @api.onchange('precio')
     def _onchange_precio(self):
         if self < 0.00:

@@ -30,9 +30,8 @@ class Libro(models.Model):
     alquiler_ids = fields.One2many(comodel_name='biblioteca.alquiler',
                                   inverse_name='libro_id', 
                                   string='Alquiler')
-    
-    """
-    @api.onchange('precio')
+  
+    """@api.onchange('precio')
     def _onchange_precio(self):
         if self < 0.00:
             raise UserError(_('El precio no puede ser negativo.'))
